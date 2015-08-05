@@ -11,6 +11,45 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+         <!--setting title-->
+        <title>Online Drug Store</title>
+        <link rel="stylesheet" href="css/home.css" type="text/css">
+        <script src="home.js"></script>
+        <!--adding javascript-->
+        <script src="code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+        <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+        <script type="text/javascript">
+            $(window).load(function() {
+            $('#slider').nivoSlider();
+         });
+         </script> 
+    </head>
+    <body>
+  <div id="main">	
+	<div id="menubar"><!--open menubar-->	
+	  <div id="welcome">
+	    <h1><a href="#"> Online Drug Store</a></h1>
+	  </div><!--close welcome-->
+      <div id="menu_items">
+	    <ul id="menu">
+             <!--open menu-->
+          <li><a href="home.jsp">Home</a></li>
+          <li ><a href="register.jsp">Register</a></li>
+          <li><a href="login.jsp">Login</a></li>
+          <li><a href="addcart.jsp">Medicines</a></li>
+          <li><a href="contact.jsp">Contact Us</a></li>
+        </ul>
+      </div><!--close menu-->
+    </div><!--close menubar-->
+    <div id="middle">
+    <a href="register.jsp">
+  <img src="images/aid.png" alt="" />
+    </a>
+    </div>
     </body>
 </html>
+
+
+        	

@@ -237,7 +237,10 @@ ul#menu li.current a, ul#menu li:hover a
   border-radius: 15px 15px 15px 15px;
   -moz-border-radius: 15px 15px 15px 15px;
   -webkit-border: 15px 15px 15px 15px;}
-  
+#content1{
+    margin-right:300px;
+        margin-left:300px;
+}
 #footer
 { width: 180px;
   height: 20px;

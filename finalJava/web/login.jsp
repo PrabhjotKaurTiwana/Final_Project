@@ -84,7 +84,7 @@ function dil(form)
         <div class="block">
     
 		
-			<h2>Please Sign Up</h2>
+			<h2>Please Login In</h2>
     <form name=F1  action="login" method="POST" onSubmit="return dil(this)">
 				  <table cellspacing="5" cellpadding="3">	
 				
@@ -94,6 +94,7 @@ function dil(form)
 					<INPUT TYPE=RESET VALUE="CLEAR"></td></tr>
 					</table>
                		</form>
+                       <a href="admin.jsp">ADMIN LOGIN</a></li>
                         
     </body>
 </html>

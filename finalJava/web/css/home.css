@@ -79,7 +79,13 @@ ol li
 { margin: 0 0 11px 0;}
 
 .block{
-   margin-left:700px;
+   height:100px;
+        width:400px;
+    position:fixed;
+    top:20%;
+    left:45%;
+    margin-top: -50px;
+    margin-left:-200px;
 }
 #main, #header, #banner, #menubar, #site_content, #footer, #content_beige
 { margin-left: auto; 
@@ -196,7 +202,15 @@ ul#menu li.current a, ul#menu li:hover a
   padding: 5px;
   margin-right: 10px;
   float: left;}
-  
+#middle{
+    height:100px;
+        width:400px;
+    position:fixed;
+    top:20%;
+    left:45%;
+    margin-top: -50px;
+    margin-left:-200px;
+}
 #content_beige
  { width: 920px;
   height: 160px;
@@ -238,8 +252,13 @@ ul#menu li.current a, ul#menu li:hover a
   -moz-border-radius: 15px 15px 15px 15px;
   -webkit-border: 15px 15px 15px 15px;}
 #content1{
-    margin-right:300px;
-        margin-left:300px;
+       height:100px;
+        width:400px;
+    position:fixed;
+    top:50%;
+    left:45%;
+    margin-top: -50px;
+    margin-left:-200px;
 }
 #footer
 { width: 180px;

@@ -79,14 +79,14 @@ public class login extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         //processRequest(request, response);
-        String uname = request.getParameter("username");
+        String username = request.getParameter("username");
         String password = request.getParameter("password");
         int count = 0;
         dbConnection conn = new dbConnection();
         Connection con = conn.getConnection();
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
-        if ((password.equals("admin") && uname.equals("admin"))) {
+        if ((password.equals("admin") && username.equals("admin"))) {
             response.sendRedirect("product.jsp");
         }
         try {
@@ -94,7 +94,7 @@ public class login extends HttpServlet {
 
                 String query = "SELECT count(*) count FROM user WHERE username = ? and password = ?";
                 PreparedStatement stmt = con.prepareStatement(query);
-                stmt.setString(1, uname);
+                stmt.setString(1, username);
                 stmt.setString(2, password);
 
                 ResultSet rs = stmt.executeQuery();
@@ -103,7 +103,7 @@ public class login extends HttpServlet {
                 out.println(count);
                 if (count == 1) {
                     HttpSession session = request.getSession();
-                    session.setAttribute("username", uname);
+                    session.setAttribute("username", username);
                     response.sendRedirect("home.jsp");
                 } else {
 

@@ -68,4 +68,8 @@ public class dbConnection {
         }
         return rowCount;
     }
+
+    PreparedStatement prepareStatement(String select__from_admin_where_admin_email_and_) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

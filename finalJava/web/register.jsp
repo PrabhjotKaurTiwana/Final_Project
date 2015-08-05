@@ -3,7 +3,12 @@
     Created on : 4-Aug-2015, 6:33:38 PM
     Author     : c0655617
 --%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.DriverManager"%>
 
+<%@page import="java.sql.PreparedStatement"%>
+<%@page import="java.sql.Connection"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -28,11 +33,11 @@ function dil(form)
 {
    for(var i=0; i<form.elements.length; i++)
    {
-		if(form.elements[i].value == "")
+		if(form.elements[i].value === "")
 		{
-		   alert("Fill out all Fields")
-		   document.F1.username.focus()
-		   return false
+		   alert("Fill out all Fields");
+		   document.F1.username.focus();
+		   return false;
 		}
    }
  if(!isNaN(document.F1.username.value))
@@ -46,9 +51,9 @@ function dil(form)
     if(document.F1.password.value!=document.F1.repassword.value)
     {
 	   alert("Check Confirm password"); 
-	   document.F1.repassword.value=""
-	   document.F1.repassword.focus()	
-	   return false
+	   document.F1.repassword.value="";
+	   document.F1.repassword.focus();	
+	   return false;
 	}
    
     if(!isNaN(document.F1.address.value))
@@ -61,18 +66,20 @@ function dil(form)
    if(!isNaN(document.F1.cityname.value))
    {
        alert("cityname field  must  be  char's & can't be null")
-	   document.F1.cityname.value=""
-	   document.F1.cityname.focus()
-	   return false
+	   document.F1.cityname.value="";
+	   document.F1.cityname.focus();
+	   return false;
    }
 	
 	 if(!isNaN(document.F1.statename.value))
    {
        alert("statename field  must  be  char's & can't be null")
-	   document.F1.statename.value=""
-	   document.F1.statename.focus()
-	   return false
+	   document.F1.statename.value="";
+	   document.F1.statename.focus();
+	   return false;
    }
+   return true;
+}
 </SCRIPT>
     </head>
     <body>
@@ -95,11 +102,12 @@ function dil(form)
     </div><!--close menubar-->	
         <div class="block">
     
-		<form role="form">
+	
 			<h2>Please Sign Up</h2>
 
 			
-				<form name=F1 onSubmit="login.jsp" action="CreateServlet" >
+				<form name=F1  method="POST" action="register"
+                                    onSubmit="return dil(this)">
 				  <table cellspacing="5" cellpadding="3">	
 				
 					<tr><td>USER NAME:</td><td> <input type="text" name="username"/></td></tr>
@@ -113,15 +121,9 @@ function dil(form)
 					<INPUT TYPE=RESET VALUE="CLEAR"></td></tr>
 					</table>
                		</form>
+        </div>
 
-<div id="footer">
- 
-   	
-    <span> Copyright © Online Drug Store</a></span>
-  
-
-</div>
-		</form>
+		
     </body>
 </html>
 

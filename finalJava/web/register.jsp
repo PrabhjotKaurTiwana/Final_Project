@@ -96,7 +96,7 @@ function dil(form)
           <li class="current"><a href="register.jsp">Register</a></li>
           <li><a href="login.jsp">Login</a></li>
           <li><a href="product.jsp">Medicines</a></li>
-          <li><a href="contact.jsp">Contact Us</a></li>
+          <li><a href="addcart.jsp">Contact Us</a></li>
         </ul>
       </div><!--close menu-->
     </div><!--close menubar-->	

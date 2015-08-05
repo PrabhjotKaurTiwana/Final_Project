@@ -89,9 +89,9 @@ function dil(form)
 				  <table cellspacing="5" cellpadding="3">	
 				
 					<tr><td>USER NAME:</td><td> <input type="text" name="adminuser"/></td></tr>
-					<tr><td>PASSWORD:</td><td> <input type="password" name="adminpassword"/></td></tr>
+					<tr><td>PASSWORD :</td><td> <input type="password" name="adminpassword"/></td></tr>
 					<tr><td></td><td><input type="submit"  value="SUBMIT"/>
-					<INPUT TYPE=RESET VALUE="CLEAR"></td></tr>
+					<INPUT TYPE="reset" VALUE="CLEAR"></td></tr>
 					</table>
                		</form>
                         

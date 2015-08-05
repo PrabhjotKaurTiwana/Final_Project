@@ -51,7 +51,7 @@ function dil(form)
           <li ><a href="home.jsp">Home</a></li>
           <li ><a href="register.jsp">Register</a></li>
           <li><a href="login.jsp">Login</a></li>
-          <li class="current"><a href="product.jsp">Medicines</a></li>
+          <li class="current"><a href="addcart.jsp">Medicines</a></li>
           <li><a href="contact.jsp">Contact Us</a></li>
         </ul>
       </div><!--close menu-->
